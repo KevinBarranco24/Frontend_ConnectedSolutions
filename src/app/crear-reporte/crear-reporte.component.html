@@ -1,1 +1,105 @@
-<p>crear-reporte works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-1 bg-body rounded" style="background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 51%, rgba(228,233,13,1) 100%)">
+                <div class="container-fluid">
+                  <a class="navbar-brand" routerLink="">
+                    <img src="../assets/images/logo/cs_300.png" alt="" width="40" height="40">
+                    Connected Solutions
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="/Report">Crear reporte</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Reportes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Configuración</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuda</a>
+                      </li>
+                        <li class="nav-item ">
+                        <a class="nav-link" routerLink="/Registro">Registrarse</a>
+                      </li>
+                      <li class="nav-item ">
+                      <a class="nav-link" routerLink="/Login">Iniciar Sesion</a>
+                     </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>    
+        </div>
+    </div>
+</div>
+<!--Aqui va el form de registro-->
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10 ">
+            <div class="card shadow-lg p-1 mb-1 bg-body rounded card-body p-4 p-lg-5" style="border-radius: 1rem;">
+                <h1>Reporte</h1>
+        <p>Crear un ticket</p>
+        <hr />
+        <form action="home.html" method="GET">
+            <div class="row mb-2">
+                <label for="username" class="col-md-2 col-form-label text-end">Name</label>
+                <div class="col-md-7 col-lg-5">
+                    <input class="form-control" name="username" id="username" type="text" placeholder="Your name here..."/>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label for="location" class="col-md-2 col-form-label text-end">Location</label>
+                <div class="col-md-7 col-lg-5">
+                    <input class="form-control" name="location" id="location" type="text" placeholder="type a location"/>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label for="datetime" class="col-md-2 col-form-label text-end">Date Time</label>
+                <div class="col-md-7 col-lg-5">
+                    <input class="form-control" name="datetime" id="datetime" type="text" readonly value="2022/03/01 11:30 am"/>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="datetime" class="col-md-2 col-form-label text-end">Descripion of issue</label>
+                <div class="col-md-7 col-lg-5">
+                    <textarea class="form-control" name="description" id="description" placeholder="Provide a detailed description of the issue"></textarea>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="offset-md-2 col-md-10">
+                    <input class="btn btn-danger" type="submit" value="submit"/>
+                    <a class="btn btn-secondary" href="./home.html">Return home</a>
+                </div>
+            </div>
+        </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Aqui va el pie de pagina-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <footer class="text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4"></div>
+                <!-- Grid container -->
+              
+                <!-- Copyright -->
+                <div class="text-center p-3 shadow-sm p-3 mb-0 bg-body rounded" style="background: radial-gradient(circle, rgba(67,33,123,1) 7%, rgba(236,10,10,0.9837068616509104) 100%)">
+                  © 2022 Copyright:
+                  <a class="text-white">Connected Solutions</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+        </div>
+    </div>
+</div>
