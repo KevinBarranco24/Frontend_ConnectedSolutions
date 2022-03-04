@@ -1,1 +1,137 @@
-<p>reportes works!</p>
+<!--NavBar-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-1 bg-body rounded" style="background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 51%, rgba(228,233,13,1) 100%)">
+                <div class="container-fluid">
+                  <a class="navbar-brand" routerLink="">
+                    <img src="../assets/images/logo/cs_300.png" alt="" width="40" height="40">
+                    Connected Solutions
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="/Report">Crear reporte</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="Tickets">Reportes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Configuración</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuda</a>
+                      </li>
+                        <li class="nav-item ">
+                        <a class="nav-link" routerLink="/Registro">Registrarse</a>
+                      </li>
+                      <li class="nav-item ">
+                      <a class="nav-link" routerLink="/Login">Iniciar Sesion</a>
+                     </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+</div>
+<!--Cuerpo de la pagina card etc-->
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+            <div class="card card shadow-lg p-1 mb-1 bg-body rounded card-body p-4 p-lg-5" style="border-radius: 1rem;">
+                <h2>View Tickets</h2>
+                <p>List all open tickets</p>
+                <hr />
+                <div class="container">
+                    <form action="/dashboard.html" method="GET">
+                        <div class="row">
+                            <h4>Select estart and end date to be filtered below</h4>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <label class="form-label col-sm-5 col-lg-2">Start Date</label>
+                                <input type="datetime-local" id="startdate" name="startdate"> 
+                            </div>
+                            <div class="form-group col-sm-5">
+                                <label class="form-label col-sm-5 col-lg-2">End Date</label>
+                                <input type="datetime-local" id="enddate" name="startdate"> 
+                            </div>
+                            <div class="col-lg-2">
+                                <input type="submit" class="btn btn-danger" value="Filter"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <hr />
+                <table class="table table-hover table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Created</th>
+                            <th>Owner</th>
+                            <th>Location</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="cursor: pointer;">
+                            <td>2022/03/01 11:32 am</td>
+                            <td>
+                                <span>Francisco H.</span>
+                                <p class="text-muted">franciscojavier.hernandez1@molex.com</p>
+                            </td>
+                            <td>PCB's</td>
+                            <td>Help, we need help. thx.</td>
+                        </tr>
+                        <tr  style="cursor: pointer;" >
+                            <td>2022/03/01 14:02 am</td>
+                            <td>Kevin K.
+                                <p class="text-muted">kevink.barranco@cucei.udg.com</p>
+                            </td>
+                            <td>Coordinación</td>
+                            <td>Ayuda banda, no puedo controlar a Angel.</td>
+                        </tr>
+                        <tr  style="cursor: pointer;" >
+                            <td>2022/03/01 15:21 am</td>
+                            <td>Cedar A.
+                                <p class="text-muted">cesar.alarcon@tata.com</p>
+                            </td>
+                            <td>En el baño del edificio titanic</td>
+                            <td>No hay papel we :'v</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pager text-center">
+                    <a class="btn btn-danger" type="button" href="dashboard.html?page=1">1</a>
+                    <a class="btn btn-danger" type="button" href="dashboard.html?page=2">2</a>
+                    <a class="btn btn-danger" type="button" href="dashboard.html?page=3">3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Pie de pagina-->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <footer class="text-center text-white ">
+          <!-- Grid container -->
+          <div class="container p-4"></div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3 shadow-sm p-3 mb-0 bg-body rounded" style="background: radial-gradient(circle, rgba(67,33,123,1) 7%, rgba(236,10,10,0.9837068616509104) 100%)">
+            © 2022 Copyright:
+            <a class="text-white">Connected Solutions</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+    </div>
+  </div>

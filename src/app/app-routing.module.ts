@@ -4,6 +4,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
 import { LoginComponent } from './login/login.component';
 import { CrearReporteComponent } from './crear-reporte/crear-reporte.component';
+import { ReportesComponent  } from './reportes/reportes.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,9 @@ const routes: Routes = [
   },
   {
     path: 'Report', component: CrearReporteComponent
+  },
+  {
+    path: 'Tickets', component: ReportesComponent
   }
 ];
 
